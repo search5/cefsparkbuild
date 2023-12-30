@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "cefspark-build-plugin"
+version = "0.1.0"
+description = ""
+authors = ["이지호 <search5@mz.co.kr>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.plugins."poetry.application.plugin"]
+cefspark-build = "cefspark_build_plugin:CEFSparkPlugin"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
